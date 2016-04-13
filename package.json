@@ -1,6 +1,7 @@
 {
   "name": "service-catalogue",
   "version": "0.0.0",
+  "repository": "github.com/cptaffe/sc",
   "description": "Service Catalogue",
   "main": "index.js",
   "scripts": {
