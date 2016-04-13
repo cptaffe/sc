@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Material2</title>
+  <base href="/">
+  <script type="application/javascript" src="node_modules/es6-shim/es6-shim.js"></script>
+  <script type="application/javascript" src="node_modules/systemjs/dist/system-polyfills.js"></script>
+  <script type="application/javascript" src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+  <script type="application/javascript" src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--link type="text/css" href="main.css" rel="stylesheet"-->
+</head>
+<body>
+  <app>Loading...</app>
+
+  <script type="application/javascript" src="node_modules/systemjs/dist/system.src.js"></script>
+  <script type="application/javascript" src="node_modules/rxjs/bundles/Rx.js"></script>
+  <script type="application/javascript" src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script type="application/javascript" src="node_modules/angular2/bundles/http.dev.js"></script>
+  <script type="application/javascript" src="node_modules/angular2/bundles/router.dev.js"></script>
+  <script type="application/javascript">
+    System.config({
+      packages: {
+        'app': {
+          format: 'register',
+          defaultExtension: 'js'
+        },
+      },
+      defaultJSExtensions: true,
+      paths: {
+        'angular2/*':'node_modules/angular2/*',
+        'rxjs/*':'node_modules/rxjs/*',
+        '@angular2-material/*':'node_modules/@angular2-material/*'
+      }
+    });
+    System.import('app/main').then(null, console.error.bind(console));
+  </script>
+</body>
+</html>

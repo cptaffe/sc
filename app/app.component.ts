@@ -1,8 +1,17 @@
 
 import {Component} from "angular2/core"
+import {MdButton} from '@angular2-material/button/button';
+import {MD_CARD_DIRECTIVES} from '@angular2-material/card/card';
 
 @Component({
-  selector: 'my-app',
-  template: '<h1> First angular 2 App </h1>'
+  selector: 'app',
+  template: `
+  <md-card>
+    <md-card-title>Status</md-card-title>
+    <md-card-content>
+      <p> nothing much </p>
+    </md-card-content>
+  </md-card>`,
+  directives: [MD_CARD_DIRECTIVES, MdButton]
 })
-export class AppComponent{}
+export class App{}
