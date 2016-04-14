@@ -4,7 +4,7 @@ import {MdButton} from '@angular2-material/button/button';
 import {MD_CARD_DIRECTIVES} from '@angular2-material/card/card';
 
 @Component({
-  selector: 'app',
+  selector: 'status-card',
   template: `
   <md-card>
     <md-card-title>Status</md-card-title>
@@ -14,4 +14,4 @@ import {MD_CARD_DIRECTIVES} from '@angular2-material/card/card';
   </md-card>`,
   directives: [MD_CARD_DIRECTIVES, MdButton]
 })
-export class App{}
+export class StatusCard{}
